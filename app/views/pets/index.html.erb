@@ -1,10 +1,10 @@
 <ul>
   <% @pets.each do |pet| %>
-    <li>
+    <li class="list-unstyled">
       <%= link_to pet.found_days_ago, pet_path(pet) %> |
       <%= link_to 'delete', pet_path(pet), data: { turbo_method: 'delete', turbo_confirm: "delete #{pet.name}?"} %>
     </li>
   <% end %>
 </ul>
 
-<%= link_to 'add a new pet', new_pet_path %>
+<%= link_to 'add a new pet', new_pet_path, class: "btn btn-primary mt-4" %>
