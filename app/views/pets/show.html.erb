@@ -2,3 +2,5 @@
 <h2>found at: <%= @pet.address %></h2>
 <h3><%= @pet.species %></h3>
 <p><%= @pet.found_days_ago %></p>
+
+<%= link_to 'edit this pet', edit_pet_path(@pet) %>
