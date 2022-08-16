@@ -7,6 +7,6 @@ class Pet < ApplicationRecord
 
   def found_days_ago
     days = (Date.today - found_on).to_i
-    "#{name.capitalize} found #{days} ago."
+    "#{name.capitalize} was found #{days} days ago."
   end
 end
